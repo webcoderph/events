@@ -49,7 +49,7 @@ class App extends Component {
   clearFields() {
     var cbarray = document.getElementsByClassName('dows');
     for(var i = 0; i < cbarray.length; i++){
-      cbarray[i].checked = "false";
+      cbarray[i].checked = false;
     }
 
     this.setState({title: '', startDate: new Date(), endDate: new Date()})
